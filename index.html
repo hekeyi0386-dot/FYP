@@ -3,312 +3,860 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>After the Last Goodbye</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="pet_memorial_style.css" />
+  <title>After the Goodbye</title>
+  <link rel="stylesheet" href="pet_memorial_style_completed.css" />
 </head>
 <body>
-  <div class="mist mist-1"></div>
-  <div class="mist mist-2"></div>
-  <div class="stars"></div>
-
   <header class="hero">
+    <div class="hero-base-layer" aria-hidden="true"></div>
     <div class="hero-overlay"></div>
+
+    <div class="hero-photo-layer" aria-hidden="true">
+      <div class="hero-photo-slot">
+        <img src="images/截屏2026-03-22 下午9.16.29.png" alt="" />
+      </div>
+      <div class="hero-photo-slot">
+        <img src="images/截屏2026-03-22 下午9.17.26.png" alt="" />
+      </div>
+      <div class="hero-photo-slot">
+        <img src="images/截屏2026-03-22 下午9.17.40.png" alt="" />
+      </div>
+      <div class="hero-photo-slot">
+        <img src="images/截屏2026-03-22 下午9.18.11.png" alt="" />
+      </div>
+      <div class="hero-photo-slot">
+        <img src="images/截屏2026-03-22 下午9.18.24.png" alt="" />
+      </div>
+    </div>
+
     <div class="hero-inner container">
-      <p class="eyebrow">Multimedia Feature</p>
-      <h1>After the Last Goodbye</h1>
+      <h1>After the Goodbye</h1>
       <p class="dek">
         In China’s growing pet economy, end-of-life services have become a space where grief,
         ritual, commerce and companionship meet.
       </p>
       <div class="meta">
-        <span>2230031074 He Keyi</span>
-        <span>2230031312 Zhang Han</span>
+        <span>Keyi He</span>
+        <span>Han Zhang</span>
+        <span class="meta-date">April 2026</span>
       </div>
-    </div>
+    </div> 
   </header>
 
   <main>
-    <section class="intro-grid container section-gap">
-      <div class="intro-text story-card soft-border">
-        <p class="dropcap">
-          Ms. Shen held a farewell ceremony for Jing Xiangxiang, her cat, after the body was cremated.
-          “Thank you for being my family and teaching me about love and loss,” she said. “I bring the
-          ashes home. Sometimes I touch the lid of the urn, as if she is still here. I hope that one day
-          I can be reunited with it.”
-        </p>
-        <p>
-          At Live (Li Wu), a pet end-of-life service shop in Guangzhou, soft music plays in the room.
-          A Samoyed lies quietly on a ceremony table under a white cloth while staff gently groom the body,
-          prepare a burial blanket, and leave favorite snacks and toys on the altar. Afterward, the owner is
-          left alone for one final goodbye.
-        </p>
-      </div>
+    <section class="opening-copy container soft-border" id="opening-copy">
+    <p>
+      Ms. Shen, a lady who held a farewell ceremony for Jing Xiangxiang, her cat, after her body was cremated.
+      “Thank you for being my family and teaching me about love and loss,” she said. “I bring the ashes home.
+      Sometimes I touch the lid of the urn, as if she is still here. I hope that one day I can be reunited with it.”
+    </p>
 
-      <aside class="media-stack">
-        <figure class="image-frame tall soft-border">
-          <!-- Replace src with your hero documentary image -->
-          <img src="images/farewell-room.jpg" alt="Farewell ceremony room at a pet end-of-life service shop" />
-          <figcaption>Planned visual: the farewell room and ceremony table.</figcaption>
-        </figure>
-
-        <div class="video-card story-card soft-border">
-          <h3>Video block</h3>
-          <p>
-            Place Ami’s explainer video here: body pickup and transport, body cleaning, farewell ceremony,
-            cremation or aquamation, and ash storage.
-          </p>
-          <div class="video-placeholder">16:9 video embed area</div>
-        </div>
-      </aside>
+    <p>
+      At Live (Li Wu), a pet end-of-life service shop in Haizhu District, Guangzhou, soft music plays in the room.
+      A Samoyed lies on a ceremony table quietly covered with a white cloth. The staff gently brush its fur,
+      trim stray hair around its ears and paw pads, and then cover it with a burial blanket, which carries blessings
+      for the deceased to journey to heaven in Buddhist tradition. The Rebirth Mantra plays in the room, and on the altar
+      are the dog’s favorite beef jerky and toys, prepared by its owner. After this body grooming process, the owner was
+      left alone for a final goodbye to her “family.” Her wails could be heard through the wall.
+    </p>
+    <div class="video-embed-frame opening-copy-video">
+      <video controls preload="metadata">
+        <source src="movie/ami介绍.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <p>
+      In recent years, China’s pet industry has grown rapidly. With declining marriage rates and a growing number of people living alone, pets have been seen as family members and become important sources of emotional companionship, and many owners are willing to provide more attentive care to express affection and find emotional comfort. End-of-life services for pets have also emerged. 
+    </p>
     </section>
 
-    <section class="stats-band section-gap">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Scale of the pet economy</p>
-          <h2>More pets, more spending, deeper attachment</h2>
-        </div>
+    <section class="pet-data-section container">
+  <h2 class="pet-data-title">More pets, more spending, deeper attachment</h2>
 
-        <div class="stats-grid">
-          <article class="stat-box soft-border">
-            <span class="stat-number">124 million</span>
-            <span class="stat-label">urban pet cats and dogs in China in 2024</span>
-          </article>
-          <article class="stat-box soft-border">
-            <span class="stat-number">300.2 bn yuan</span>
-            <span class="stat-label">urban cat and dog consumption market in 2024</span>
-          </article>
-          <article class="stat-box soft-border">
-            <span class="stat-number">811.4 bn yuan</span>
-            <span class="stat-label">China’s pet economy in 2025</span>
-          </article>
-          <article class="stat-box soft-border">
-            <span class="stat-number">1.15 tn yuan</span>
-            <span class="stat-label">projected market size by 2028</span>
-          </article>
-        </div>
-
-        <p class="source-note">
-          Planned visualization source block: 2025 China Pet Industry White Paper, iiMedia Research, Goldman Sachs.
-        </p>
+  <div class="pet-data-grid">
+    <article class="pet-stat-card">
+      <div class="pet-stat-number">124 million</div>
+      <div class="pet-stat-label">
+        urban pet cats and dogs in China in 2024
       </div>
+    </article>
+
+    <article class="pet-stat-card">
+      <div class="pet-stat-number">300.2 bn yuan</div>
+      <div class="pet-stat-label">
+        urban cat and dog consumption in 2024
+      </div>
+    </article>
+
+    <article class="pet-stat-card">
+      <div class="pet-stat-number">811.4 bn yuan</div>
+      <div class="pet-stat-label">
+        China’s pet economy in 2025
+      </div>
+    </article>
+
+    <article class="pet-stat-card">
+      <div class="pet-stat-number">1.15 tn yuan</div>
+      <div class="pet-stat-label">
+        projected market size by 2028
+      </div>
+    </article>
+  </div>
+
+  <p class="pet-data-source">
+    Sources: 2025 China Pet Industry White Paper, iiMedia Research, Goldman Sachs.
+  </p>
+</section>
+
+    <section class="container section-gap demographic-callout">
+      <div class="demographic-year" aria-hidden="true">2024</div>
+      <h2 class="demographic-headline">
+        <span class="demographic-sub">For the first time,</span>
+        <span class="demographic-lead">pets outnumbered<br />young children.</span>
+      </h2>
+      <p class="demographic-dek">
+        In 2024, the number of pets in China surpassed the number of children under age four.
+      </p>
     </section>
 
     <section class="container section-gap narrative-split">
-      <div class="text-column story-card soft-border">
-        <div class="section-heading left">
-          <p class="eyebrow">Changing meanings of pets</p>
-          <h2>From animals to emotional companions and family members</h2>
+      <div class="narrative-stack">
+        <article class="story-card story-card-plain">
+          <div class="section-heading left">
+            <h2>How pets became family</h2>
+          </div>
+          <p>
+            In many households, the role of pets has gradually changed from simply being animals to
+            emotional companions and even family members. 
+          </p>
+          <p>
+            As pet owners tend to be younger and social attitudes toward pets become more accepting, the
+            pet funeral industry has gradually gained recognition and the market has expanded rapidly.
+          </p>
+        </article>
+
+        <div>
+          <div class="mini-stats-grid">
+            <article class="stat-box small">
+              <div class="stat-number">1.311 bn yuan</div>
+              <div class="stat-label">
+                estimated market size of China’s pet funeral industry in the first half of 2024
+              </div>
+            </article>
+            <article class="stat-box small">
+              <div class="stat-number">5,135 to <br> 998</div>
+              <div class="stat-label">
+                pet funeral shops in the first half of 2024, up from 998 in 2019
+              </div>
+            </article>
+          </div>
+          <p class="source-note source-note-left">
+            Source: Market Monitor Global.
+          </p>
         </div>
-        <p>
-          In many households, pets are no longer seen only as animals. As social consumption shifts away
-          from basic survival needs and toward quality of life, pets increasingly take on emotional roles.
-          Younger owners and more accepting attitudes have also expanded the market for pet funeral and memorial services.
-        </p>
-        <p>
-          On Dianping, end-of-life services in cities such as Shenzhen and Guangzhou usually range from
-          300 yuan to 1,600 yuan, often including cremation and a farewell ceremony. More elaborate memorial items,
-          including paw-print clay pieces, ornaments, and preserved keepsakes, add another layer of emotional and commercial value.
-        </p>
       </div>
 
-      <div class="quote-panel soft-border">
-        <figure class="portrait-block">
-          <!-- Replace with Zhao Xingbo portrait -->
-          <img src="images/zhao-xingbo.jpg" alt="Portrait of Zhao Xingbo" />
-        </figure>
+      <aside class="quote-panel">
+        <div class="portrait-block">
+          <img src="images/赵兴波教授.png" alt="Portrait of Zhao Xingbo" />
+        </div>
         <div class="speech-bubble">
-          <p>
-            “As social consumption structure has shifted from meeting basic living needs to seeking a better
-            quality of life, the role of pet dogs has evolved from serving human needs to ornamentation and entertainment,
-            and now to emotional companions and family members.”
+          <p class="quote-attribution">
+            <span class="quote-name">Xingbo Zhao</span>
+            <span class="quote-role">China Agricultural University <br>
+          Department of Companion Animal Science </span>
           </p>
-          <span>— Zhao Xingbo, China Agricultural University</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="container section-gap two-col-feature">
-      <div class="story-card soft-border">
-        <div class="section-heading left">
-          <p class="eyebrow">Industry growth</p>
-          <h2>A fast-expanding but uneven market</h2>
-        </div>
-        <p>
-          The pet funeral industry reached about 1.311 billion yuan in the first half of 2024, while the number
-          of shops grew from 998 in 2019 to about 5,135 in the first half of 2024. Providers differ widely in ritual design,
-          technical practice, and pricing transparency.
-        </p>
-      </div>
-
-      <div class="mini-stats-grid">
-        <article class="stat-box soft-border small">
-          <span class="stat-number">1.311 bn yuan</span>
-          <span class="stat-label">market size in H1 2024</span>
-        </article>
-        <article class="stat-box soft-border small">
-          <span class="stat-number">5,135 shops</span>
-          <span class="stat-label">estimated shops in H1 2024</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="container section-gap image-led">
-      <div class="image-led-main image-frame wide soft-border">
-        <!-- Replace with body-handling / memorial items photo essay -->
-        <img src="images/memorial-items.jpg" alt="Memorial items and body-handling services" />
-        <figcaption>Planned photo essay: memorial items and body-handling services.</figcaption>
-      </div>
-      <div class="image-led-copy story-card soft-border">
-        <p>
-          Memorial items have become one of the most personal ways for owners to hold onto grief. Some turn fur or ashes into necklaces,
-          while others preserve paw prints in clay and place them in carefully arranged boxes. These objects sit between mourning and material memory.
-        </p>
-        <p class="quote-inline">
-          “Compared with simply cremating the body, these memorial services emphasize emotional meaning.” — Ami
-        </p>
-      </div>
-    </section>
-
-    <section class="container section-gap interactive-section">
-      <div class="section-heading">
-        <p class="eyebrow">Mouse interaction 01</p>
-        <h2>Ash-made crystal necklaces</h2>
-      </div>
-      <p class="interactive-intro">
-        Planned interaction: when the cursor hovers over a crystal, the corresponding chemical element appears,
-        explaining why different necklaces take on different colors.
-      </p>
-
-      <div class="crystal-grid">
-        <article class="crystal-card soft-border">
-          <div class="crystal crystal-a"></div>
-          <div class="hover-reveal">
-            <h3>Copper</h3>
-            <p>Can contribute blue-green tones in the crystalized memorial piece.</p>
-          </div>
-        </article>
-        <article class="crystal-card soft-border">
-          <div class="crystal crystal-b"></div>
-          <div class="hover-reveal">
-            <h3>Iron</h3>
-            <p>Often associated with muted amber, rust, or smoky tonal shifts.</p>
-          </div>
-        </article>
-        <article class="crystal-card soft-border">
-          <div class="crystal crystal-c"></div>
-          <div class="hover-reveal">
-            <h3>Calcium</h3>
-            <p>Linked to paler, milkier, or softly luminous textures.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="container section-gap longform-grid">
-      <div class="story-card soft-border long-text">
-        <div class="section-heading left">
-          <p class="eyebrow">Grief, ritual and service</p>
-          <h2>Why farewell ceremonies matter</h2>
-        </div>
-        <p>
-          As pets become emotionally central to family life, the death of a pet is no longer treated only as a practical matter.
-          It marks the end of an intimate relationship. In this context, farewell ceremonies become an emotional climax,
-          helping owners relive memories, release restrained grief and gradually accept loss.
-        </p>
-        <p>
-          Yiyu, the “father” of a cat named Li Dudu, said the cremation furnace was lit just as heavy rain began.
-          “The grief I had been holding back all day finally broke through at that instant. It felt as if even the god was mourning with me.”
-        </p>
-        <p>
-          Lynn, who arranged a cremation and farewell ceremony at Shanghai Rainbow Pawprints, said the care shown by staff created room for her to cry.
-          Other emotional rituals around pets also reflect the same deepening relationship: some owners even hold weddings for their dogs,
-          complete with outfits, desserts, paw-print certificates and ring exchange ceremonies.
-        </p>
-        <p>
-          Providers are also offering new forms of care, such as aquamation, which is especially suitable for small or fragile animals whose bones may not survive flame cremation.
-        </p>
-      </div>
-
-      <aside class="side-media-column">
-        <figure class="image-frame medium soft-border">
-          <!-- Replace with ash storage cabinet photo -->
-          <img src="images/ash-cabinet.jpg" alt="Ash storage cabinet" />
-          <figcaption>Planned visual: ash storage cabinet.</figcaption>
-        </figure>
-
-        <div class="story-card soft-border cabinet-interaction">
-          <h3>Mouse interaction 02</h3>
           <p>
-            Planned interaction: hover over a cabinet compartment to reveal a close-up view and the decorations arranged by the owner.
+          "As social consumption has shifted
+          from meeting basic living needs to seeking a better quality of life, the role of pet dogs has
+          also evolved from serving human needs, to ornamentation and entertainment, and now to
+          emotional companions and family members."
           </p>
-          <div class="cabinet-grid">
-            <div class="cabinet-cell">
-              <span>01</span>
-              <div class="cabinet-reveal">Close-up: urn, photo, dried flowers</div>
-            </div>
-            <div class="cabinet-cell">
-              <span>02</span>
-              <div class="cabinet-reveal">Close-up: toys, handwritten note</div>
-            </div>
-            <div class="cabinet-cell">
-              <span>03</span>
-              <div class="cabinet-reveal">Close-up: paw print and collar</div>
-            </div>
-            <div class="cabinet-cell">
-              <span>04</span>
-              <div class="cabinet-reveal">Close-up: favorite snacks and charm</div>
-            </div>
-          </div>
         </div>
       </aside>
     </section>
 
-    <section class="container section-gap governance-block">
-      <div class="story-card soft-border">
-        <div class="section-heading left">
-          <p class="eyebrow">What comes next</p>
-          <h2>Commercial growth without clear standards</h2>
+    <section class="container section-gap scroll-gallery-section" data-scroll-gallery-section>
+      <div class="scroll-gallery-shell scroll-gallery-shell-immersive">
+        <div class="scroll-gallery-panel scroll-gallery-panel-immersive" data-scroll-gallery-panel>
+          <figure class="scroll-gallery-slide is-active" data-scroll-gallery-caption-text="The pet paw printed in the box">
+            <img src="images/纪念品1.png" alt="Memorial items displayed in a pet remembrance setting" />
+          </figure>
+          <figure class="scroll-gallery-slide" data-scroll-gallery-caption-text="The crystals made from the ashes">
+            <img src="images/纪念品2.png" alt="Second view of pet memorial keepsakes and remembrance objects" />
+          </figure>
+          <figure class="scroll-gallery-slide" data-scroll-gallery-caption-text="The necklaces and peace buckle made from the ashes">
+            <img src="images/纪念品3.png" alt="Third view of pet memorial objects arranged for remembrance" />
+          </figure>
+          <figure class="scroll-gallery-slide" data-scroll-gallery-caption-text="The joss paper offerings shaped like food for pets">
+            <img src="images/纪念品4.png" alt="Fourth view of pet memorial keepsakes in the same display area" />
+          </figure>
+
+          <div class="scroll-gallery-overlay">
+            <p class="scroll-gallery-progress">Scroll to explore: <span data-scroll-gallery-current>1</span>/4</p>
+
+            <h2>What Remains After Goodbye</h2>
+
+            <div class="scroll-gallery-copy-stack">
+              <p class="scroll-gallery-copy is-active">
+                Ami, a mortician at Live, said pet funeral businesses typically offer basic body-handling
+                services including body grooming and cremation, along with derivative services centered on
+                remembrance and emotional expression, such as making memorial items and preserving pets’
+                belongings.
+              </p>
+              <p class="scroll-gallery-copy">
+                On Dianping, pet end-of-life services in first-tier cities such as Shenzhen and Guangzhou
+                typically range from 300 yuan to 1,600 yuan. In most cases, the price includes cremation and
+                a farewell ceremony, with variations largely depending on the size of the pet and the complexity
+                of the services provided.
+              </p>
+              <p class="scroll-gallery-copy">
+                Among these services, making memorial items has become a popular way for many pet owners to
+                express grief and reluctance to let go of their pet family. Some choose to turn their pets’ fur
+                or ashes into necklaces and ornaments. Others preserve their pets’ paw prints in clay during the
+                farewell ceremony and place them in memorial boxes. Through these items, owners can preserve
+                memories of their pets over time.
+              </p>
+              <p class="scroll-gallery-copy">
+                These memorial items are typically priced between 200 yuan and 1,000 yuan on Dianping.
+                “Compared with simply cremating the body, these memorial services emphasize emotional meaning,”
+                Ami said. “Some people believe ashes carry negative energy and may affect Feng Shui if kept at
+                home, so they choose to turn the ashes into a peace buckle to keep at home. It offers a sense
+                of remembrance and also carries a positive meaning.”
+              </p>
+            </div>
+
+            <div class="scroll-gallery-caption-stack">
+              <p class="scroll-gallery-caption" data-scroll-gallery-caption aria-live="polite">The pet paw printed in the box</p>
+            </div>
+
+            <div class="scroll-gallery-dots" aria-hidden="true">
+              <span class="is-active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
-        <p>
-          As the industry grows, more providers are entering the field, but service standards remain inconsistent.
-          Some providers focus on ritual and emotional care, while others mainly offer basic cremation services.
-          Without unified regulations, owners often rely on online reviews or recommendations from friends.
-        </p>
-        <p>
-          Ami said some customers struggle to understand high prices and worry about overcharging. Marketing is also difficult because the topic of death is often suppressed on social platforms.
-          Still, new technologies, demand for preserved remains, and more personalized emotional service are pushing the industry toward further specialization.
-        </p>
-        <p class="quote-inline">
-          “The key challenge for this developing industry lies in striking a balance among commercial growth,
-          service standards, and governance.” — Yixia Cao, Fudan University
-        </p>
+
+        <div class="scroll-gallery-step-track" aria-hidden="true">
+          <div class="scroll-gallery-step is-active" data-scroll-gallery-step data-scroll-gallery-index="0"></div>
+          <div class="scroll-gallery-step" data-scroll-gallery-step data-scroll-gallery-index="1"></div>
+          <div class="scroll-gallery-step" data-scroll-gallery-step data-scroll-gallery-index="2"></div>
+          <div class="scroll-gallery-step" data-scroll-gallery-step data-scroll-gallery-index="3"></div>
+        </div>
       </div>
     </section>
 
-      <section class="container section-gap video-feature-bottom">
-        <div class="video-card soft-border">
-          <div class="section-heading left">
-            <p class="eyebrow">13*. 肉祭品</p>
-            <h2>Video Record</h2>
+    <section class="container section-gap crystal-feature-section">
+      <article class="story-card story-card-plain crystal-feature-card">
+        <div class="section-heading left crystal-section-heading">
+          <h3>The Most Popular Memorials at LIVE - Ash crystal</h3>
+        </div>
+        <p class="interactive-intro">
+        Ami said the variation comes from different chemical elements in the ashes, giving each piece a distinct personal meaning.
+        <br>Hover over a crystal to explore<br/>
+      </p>
+        <div class="crystal-grid crystal-grid-custom">
+          <div class="crystal-card">
+            <div class="crystal crystal-a"></div>
+            <div class="hover-reveal">
+              <strong>Light blue tone</strong>
+              <p>Blue comes from traces of boron.</p>
+            </div>
           </div>
-          <div class="video-placeholder video-embed-frame">
-            <video controls preload="metadata">
-              <source src="./13*.肉祭品.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div class="crystal-card">
+            <div class="crystal crystal-b"></div>
+            <div class="hover-reveal">
+              <strong>Light urple tone</strong>
+              <p>Purple comes from slight twists in the ash’s inner structure during the firing process.</p>
+            </div>
+          </div>
+          <div class="crystal-card">
+            <div class="crystal crystal-c"></div>
+            <div class="hover-reveal">
+              <strong>White tone</strong>
+              <p>Calcium-rich ash content is often associated with pale, milky or light-toned crystals.</p>
+            </div>
+          </div>
+          <div class="crystal-card">
+            <div class="crystal crystal-d"></div>
+            <div class="hover-reveal">
+              <strong>Light yellow tone</strong>
+              <p>Yellow comes from nitrogen generated during the firing process.</p>
+            </div>
           </div>
         </div>
-      </section>
-  </main>
+      </article>
+    </section>
 
-  <footer class="container footer-note">
-    <p>
-      Design direction: dreamy, muted, sorrowful. Replace placeholder images in the <code>images/</code> folder and swap text blocks as needed.
-    </p>
-  </footer>
+    <section class="container section-gap storage-cabinet-section">
+      <article class="story-card story-card-plain storage-cabinet-copy">
+        <div class="section-heading left">
+          <h2>When Goodbye Becomes a Ritual</h2>
+        </div>
+        <div class="storage-cabinet-scroll" tabindex="0" aria-label="Scrollable narrative panel about pet farewell rituals">
+          <p>
+            In recent years, as more people have come to view pets as family members, end-of-life services
+            including euthanasia, pet funeral, farewell ceremony and cremation have gradually emerged.
+            Zhang Yina, a professor at the School of Social Development and Public Policy at Fudan University,
+            told Shangguan News that with declining marriage rates and a growing number of people living alone,
+            pets have become important sources of emotional companionship for many people. Owners are willing to
+            spend significantly on pets and provide more attentive, specialized care to express affection and
+            find emotional comfort.
+          </p>
+          <p>
+            For many owners, the death of a pet is no longer just a practical matter to deal with, but the end
+            of an intimate and deep relationship. As a result, pet end-of-life services have gradually evolved
+            from simple body cremation into a service industry that emphasizes ritual and emotional support.
+            The farewell ceremony is often the emotional peak because it reminds owners of the time spent with
+            their pets and helps them begin to accept the loss.
+          </p>
+          <p>
+            Yiyu, the “father” of a cat named Li Dudu, said after arranging an end-of-life service for her,
+            “The farewell ceremony was held in the afternoon, and everything had been going smoothly. But the
+            moment the cremation furnace was lit, the rain suddenly began to pour. The grief I had been holding
+            back all day finally broke through at that instant. It felt as if even the god was mourning with me.”
+          </p>
+          <p>
+            “I chose the pet end-of-life service because the service was so thoughtful,” said Lynn, who recently
+            arranged a cremation and farewell ceremony at Shanghai Rainbow Pawprints. “From the first phone call,
+            the staff listened to my needs and handled everything with care. It gave me the room I needed to
+            finally let everything out and just cry.”
+          </p>
+        </div>
+      </article>
+
+      <div class="cabinet-secret-spot cabinet-secret-spot-primary" aria-label="Hidden memorial photo reveal area">
+        <img class="cabinet-secret-photo" src="images/22**陈jiading.png" alt="Hidden memorial photo" />
+      </div>
+
+      <div class="cabinet-secret-spot cabinet-secret-spot-dog" aria-label="Hidden memorial photo reveal area for dog portrait">
+        <img class="cabinet-secret-photo" src="images/仙鹤狗.png" alt="Hidden memorial dog photo" />
+      </div>
+
+      <div class="cabinet-secret-spot cabinet-secret-spot-note" aria-label="Hidden memorial note reveal area">
+        <img class="cabinet-secret-photo" src="images/25**.主人寄语.png" alt="Hidden memorial note photo" />
+      </div>
+    </section>
+
+    <section class="container section-gap story-scroll-section" data-story-scroll-section>
+      <div class="story-scroll-copy">
+        <article class="story-scroll-step is-active" data-story-scroll-step data-story-image="0">
+
+          <p>
+            This emotional need has grown as pets become a core part of the family. Some owners even hold weddings
+            for their dogs. Lulu, a wedding planner who once organized a ceremony for two Pomeranians, said the team
+            decided from the beginning to hold an outdoor lawn wedding in order to better reflect the dogs’ nature.
+            “We also prepared wedding outfits, pet-friendly desserts, interactive activities, DIY drool bibs and even
+            a wedding car for the dogs. The ceremony included paw-printing on a marriage certificate and a ring exchange,
+            all of which were planned together with the pets’ owners,” she said.
+          </p>
+        </article>
+
+        <article class="story-scroll-step" data-story-scroll-step data-story-image="1">
+   
+          <p>
+            These emotional ties have also led to more options for pet end-of-life services. Beyond traditional cremation,
+            some providers are now offering aquamation, a water-based alternative. Ami said this method is becoming popular
+            for smaller or more fragile pets, such as birds or snakes, as it preserves their tiny bone structures that might
+            otherwise break under the high heat of the flame.
+          </p>
+        </article>
+
+        <article class="story-scroll-step" data-story-scroll-step data-story-image="2">
+     
+          <p>
+            “In this industry, what we are really providing is emotional value, so personalized service is essential,” Ami
+            said. For the storage of ashes, some providers also offer urns made from different materials to meet the needs
+            of different families. Stainless steel urns are more durable and easier to carry during a move, while white
+            marble urns provide better protection against moisture.
+          </p>
+          <p>
+            Many providers also film the entire process for owners who cannot attend in person, allowing them to take part
+            in the farewell remotely. Most of them offer 24-hour service as well. “Because the death of a pet often comes
+            without warning, we need to be on call at all times to respond to our clients’ needs,” Ami added.
+          </p>
+        </article>
+      </div>
+
+      <div class="story-scroll-visual">
+        <div class="story-scroll-stage">
+          <figure class="story-scroll-image is-active" data-story-scroll-image="0">
+            <img src="images/博美结婚证.png" alt="Pomeranian wedding certificate" />
+          </figure>
+          <figure class="story-scroll-image" data-story-scroll-image="1">
+            <img src="images/小型动物.png" alt="Small animal memorial image" />
+          </figure>
+          <figure class="story-scroll-image" data-story-scroll-image="2">
+            <img src="images/骨灰盒.png" alt="Pet ash urn" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-gap longform-grid longform-stack-section">
+      <article class="story-card">
+        <div class="longform-stack-intro">
+          <div class="section-heading left">
+            <h2>The Ongoing Challenges</h2>
+          </div>
+          <p>
+            As pet end-of-life needs grow, more providers are entering the industry. However, this rapid expansion has
+            also exposed a gap between commercial growth and a lack of industry standards.
+          </p>
+        </div>
+        <div class="vertical-tabs" data-vertical-tabs>
+          <div class="vertical-tabs-sidebar">
+            <div class="vertical-tabs-nav" role="tablist" aria-orientation="vertical">
+              <button
+                class="vertical-tab is-active"
+                type="button"
+                role="tab"
+                id="cost-tab-providers"
+                aria-selected="true"
+                aria-controls="cost-panel-providers"
+                data-tab-target="providers"
+              >
+                Providers
+              </button>
+              <button
+                class="vertical-tab"
+                type="button"
+                role="tab"
+                id="cost-tab-social-media"
+                aria-selected="false"
+                aria-controls="cost-panel-social-media"
+                data-tab-target="social-media"
+              >
+                Social Media
+              </button>
+              <button
+                class="vertical-tab"
+                type="button"
+                role="tab"
+                id="cost-tab-regulations"
+                aria-selected="false"
+                aria-controls="cost-panel-regulations"
+                data-tab-target="regulations"
+              >
+                Regulations
+              </button>
+            </div>
+          </div>
+
+          <div class="vertical-tabs-panels">
+            <div
+              class="vertical-tab-panel is-active"
+              role="tabpanel"
+              id="cost-panel-providers"
+              aria-labelledby="cost-tab-providers"
+              data-tab-panel="providers"
+            >
+              <p>
+                Ami said service quality can vary significantly from one provider to another. From the design of farewell
+                ceremonies to the technical details of cremation or aquamation, each provider follows its own practices.
+                “Some providers emphasize the sense of ritual and emotional support, while others focus on basic end-of-life
+                services such as cremation,” she said.
+              </p>
+            </div>
+
+            <div
+              class="vertical-tab-panel"
+              role="tabpanel"
+              id="cost-panel-social-media"
+              aria-labelledby="cost-tab-social-media"
+              data-tab-panel="social-media"
+              hidden
+            >
+              <p>
+                Without unified regulations, pet owners often find it difficult to judge the quality of service, leading them
+                to rely heavily on online reviews or recommendations from friends. Ami also said that marketing remains a challenge
+                due to the sensitive nature of the topic. “Death is a negative topic, and social media platforms won’t promote our
+                content because their policies discourage content related to death,” she said. “Most people only find us when they
+                have an urgent need.”
+              </p>
+            </div>
+
+            <div
+              class="vertical-tab-panel"
+              role="tabpanel"
+              id="cost-panel-regulations"
+              aria-labelledby="cost-tab-regulations"
+              data-tab-panel="regulations"
+              hidden
+            >
+              <p>
+                The regulatory system of the industry also remains relatively limited. “There are no clear industry standards yet,”
+                Ami said. “Some providers might exploit the owner’s grief to overcharge.” She said many customers are unsure why
+                the services can be so expensive, and staff often have to explain what basic procedures are included. “We hope for
+                more standardization in the future.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <aside class="story-card">
+        <h3> Solutions </h3>
+        <p>
+          When asked about the future of the pet end-of-life service industry, Ami said the industry is likely to undergo
+          a period of shakeout and consolidation as technology and service quality improve. New methods like aquamation and
+          the demand for preserving a pet’s remains are pushing the market toward more high-tech and specialized directions.
+          At the same time, more emotional elements are being integrated into these services.
+        </p>
+        <p>
+          According to Statista, China became the world’s second-largest pet market in 2025. Driven by growing emotional
+          needs, the pet end-of-life service industry is expanding rapidly.
+        </p>
+      </aside>
+    </section>
+
+    <section class="container section-gap industry-quote-section">
+      <article class="story-card industry-quote-card">
+        <p class="quote-inline">
+          “The key challenge for this developing industry lies in striking a balance among commercial growth, service standards,
+          and governance, so as to build a resilient system in which needs can be responded to, risks can be controlled, and
+          conflicts can be mediated.”
+        </p>
+        <p class="source-note source-note-left">
+          — Yixia Cao, School of Social Development and Public Policy, Fudan University
+        </p>
+      </article>
+    </section>
+
+  </main>
+  <script>
+    const heroImages = [
+      "images/截屏2026-03-22 下午9.16.29.png",
+      "images/截屏2026-03-22 下午9.17.26.png",
+      "images/截屏2026-03-22 下午9.17.40.png",
+      "images/截屏2026-03-22 下午9.18.11.png",
+      "images/截屏2026-03-22 下午9.18.24.png",
+      "images/截屏2026-03-22 下午9.18.53.png",
+      "images/截屏2026-03-22 下午9.19.06.png",
+      "images/截屏2026-03-22 下午9.21.19.png",
+      "images/截屏2026-03-22 下午9.21.37.png",
+      "images/截屏2026-03-22 下午9.22.06.png"
+    ];
+
+    const heroSlots = document.querySelectorAll('.hero-photo-slot img');
+    const heroFadeDuration = 2200;
+    const maxConcurrentHeroTransitions = 2;
+    const heroSlotBaseDelays = [5200, 6800, 5900, 7600, 6300];
+    const heroSlotStepSizes = [1, 2, 1, 3, 2];
+
+    const heroSlotStates = Array.from(heroSlots, (_, index) => ({
+      slot: heroSlots[index],
+      currentFrame: (index * 2) % heroImages.length,
+      step: heroSlotStepSizes[index % heroSlotStepSizes.length],
+      baseDelay: heroSlotBaseDelays[index % heroSlotBaseDelays.length],
+      pendingFrame: null,
+      isTransitioning: false
+    }));
+
+    const getOccupiedHeroFrames = (activeSlotState) => {
+      return new Set(
+        heroSlotStates.flatMap((slotState) => {
+          if (slotState === activeSlotState) {
+            return [];
+          }
+
+          const occupiedFrames = [slotState.currentFrame];
+
+          if (slotState.pendingFrame !== null) {
+            occupiedFrames.push(slotState.pendingFrame);
+          }
+
+          return occupiedFrames;
+        })
+      );
+    };
+
+    const getNextHeroFrame = (slotState) => {
+      const occupiedFrames = getOccupiedHeroFrames(slotState);
+      let candidateFrame = slotState.currentFrame;
+
+      for (let attempt = 0; attempt < heroImages.length; attempt += 1) {
+        candidateFrame = (candidateFrame + slotState.step) % heroImages.length;
+
+        if (!occupiedFrames.has(candidateFrame)) {
+          return candidateFrame;
+        }
+      }
+
+      return (slotState.currentFrame + slotState.step) % heroImages.length;
+    };
+
+    const getActiveHeroTransitionCount = () => {
+      return heroSlotStates.filter((slotState) => slotState.isTransitioning).length;
+    };
+
+    const updateHeroSlot = (slotState) => {
+      if (slotState.isTransitioning) {
+        return;
+      }
+
+      slotState.isTransitioning = true;
+      slotState.slot.style.opacity = '0';
+      slotState.pendingFrame = getNextHeroFrame(slotState);
+
+      window.setTimeout(() => {
+        slotState.slot.src = heroImages[slotState.pendingFrame];
+        slotState.currentFrame = slotState.pendingFrame;
+        slotState.pendingFrame = null;
+
+        window.requestAnimationFrame(() => {
+          slotState.slot.style.opacity = '0.92';
+          window.setTimeout(() => {
+            slotState.isTransitioning = false;
+          }, heroFadeDuration);
+        });
+      }, Math.round(heroFadeDuration * 0.58));
+    };
+
+    const scheduleHeroSlotCycle = (slotState, initialDelay = 0) => {
+      const jitter = Math.floor(Math.random() * 1800);
+      const delay = initialDelay || slotState.baseDelay + jitter;
+
+      window.setTimeout(() => {
+        if (getActiveHeroTransitionCount() >= maxConcurrentHeroTransitions) {
+          scheduleHeroSlotCycle(slotState, 450 + Math.floor(Math.random() * 550));
+          return;
+        }
+
+        updateHeroSlot(slotState);
+        scheduleHeroSlotCycle(slotState, slotState.baseDelay + Math.floor(Math.random() * 1800));
+      }, delay);
+    };
+
+    heroSlotStates.forEach((slotState, index) => {
+      scheduleHeroSlotCycle(slotState, 1200 + index * 1100);
+    });
+
+    const isElementFullyInViewport = (element, tolerance = 2) => {
+      if (!element) {
+        return false;
+      }
+
+      const rect = element.getBoundingClientRect();
+      const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+      return (
+        rect.top >= 0 - tolerance &&
+        rect.left >= 0 - tolerance &&
+        rect.bottom <= viewportHeight + tolerance &&
+        rect.right <= viewportWidth + tolerance
+      );
+    };
+
+    const scrollGalleries = Array.from(document.querySelectorAll('[data-scroll-gallery-section]')).map((section) => {
+      const panel = section.querySelector('[data-scroll-gallery-panel]');
+      const slides = Array.from(section.querySelectorAll('.scroll-gallery-slide'));
+      const dots = Array.from(section.querySelectorAll('.scroll-gallery-dots span'));
+      const copies = Array.from(section.querySelectorAll('.scroll-gallery-copy'));
+      const caption = section.querySelector('[data-scroll-gallery-caption]');
+      const steps = Array.from(section.querySelectorAll('[data-scroll-gallery-step]'));
+      const currentLabel = section.querySelector('[data-scroll-gallery-current]');
+
+      slides.forEach((slide) => {
+        const image = slide.querySelector('img');
+        if (image) {
+          const preloadImage = new Image();
+          preloadImage.src = image.src;
+        }
+      });
+
+      return {
+        section,
+        panel,
+        slides,
+        dots,
+        copies,
+        caption,
+        steps,
+        currentLabel,
+        activeIndex: 0
+      };
+    });
+
+    const setScrollGalleryIndex = (gallery, nextIndex) => {
+      if (nextIndex === gallery.activeIndex || nextIndex < 0 || nextIndex >= gallery.slides.length) {
+        return false;
+      }
+
+      gallery.slides[gallery.activeIndex].classList.remove('is-active');
+      gallery.dots[gallery.activeIndex].classList.remove('is-active');
+      if (gallery.copies[gallery.activeIndex]) {
+        gallery.copies[gallery.activeIndex].classList.remove('is-active');
+      }
+      gallery.slides[nextIndex].classList.add('is-active');
+      gallery.dots[nextIndex].classList.add('is-active');
+      if (gallery.copies[nextIndex]) {
+        gallery.copies[nextIndex].classList.add('is-active');
+      }
+      if (gallery.caption) {
+        gallery.caption.textContent = gallery.slides[nextIndex].dataset.scrollGalleryCaptionText || '';
+      }
+      if (gallery.steps[gallery.activeIndex]) {
+        gallery.steps[gallery.activeIndex].classList.remove('is-active');
+      }
+      if (gallery.steps[nextIndex]) {
+        gallery.steps[nextIndex].classList.add('is-active');
+      }
+      if (gallery.currentLabel) {
+        gallery.currentLabel.textContent = String(nextIndex + 1);
+      }
+      gallery.activeIndex = nextIndex;
+      return true;
+    };
+
+    scrollGalleries.forEach((gallery) => {
+      const observer = new IntersectionObserver((entries) => {
+        const visibleEntries = entries.filter((entry) => entry.isIntersecting);
+
+        if (!visibleEntries.length) {
+          return;
+        }
+
+        const viewportCenter = window.innerHeight / 2;
+        const bestEntry = visibleEntries.reduce((closestEntry, entry) => {
+          const entryCenter = entry.boundingClientRect.top + (entry.boundingClientRect.height / 2);
+          const closestCenter = closestEntry.boundingClientRect.top + (closestEntry.boundingClientRect.height / 2);
+
+          return Math.abs(entryCenter - viewportCenter) < Math.abs(closestCenter - viewportCenter)
+            ? entry
+            : closestEntry;
+        });
+
+        const nextIndex = Number(bestEntry.target.dataset.scrollGalleryIndex);
+
+        if (!Number.isNaN(nextIndex)) {
+          setScrollGalleryIndex(gallery, nextIndex);
+        }
+      }, {
+        root: null,
+        rootMargin: '-42% 0px -42% 0px',
+        threshold: [0, 0.5, 1]
+      });
+
+      gallery.steps.forEach((step) => observer.observe(step));
+    });
+
+    const storyScrollSections = Array.from(document.querySelectorAll('[data-story-scroll-section]'));
+
+    storyScrollSections.forEach((section) => {
+      const steps = Array.from(section.querySelectorAll('[data-story-scroll-step]'));
+      const images = Array.from(section.querySelectorAll('[data-story-scroll-image]'));
+      const stage = section.querySelector('.story-scroll-stage');
+
+      const setActiveStoryImage = (nextIndex) => {
+        steps.forEach((step, index) => {
+          step.classList.toggle('is-active', index === nextIndex);
+        });
+
+        images.forEach((image, index) => {
+          image.classList.toggle('is-active', index === nextIndex);
+        });
+      };
+
+      const updateStoryImageByViewport = () => {
+        if (!isElementFullyInViewport(stage)) {
+          return;
+        }
+
+        const focusLine = window.innerHeight * 0.36;
+        let nextIndex = steps.findIndex((step) => {
+          const rect = step.getBoundingClientRect();
+          return rect.top <= focusLine && rect.bottom >= focusLine;
+        });
+
+        if (nextIndex === -1) {
+          nextIndex = steps.reduce((closestIndex, step, index) => {
+            const rect = step.getBoundingClientRect();
+            const distance = Math.abs(rect.top - focusLine);
+            const closestRect = steps[closestIndex].getBoundingClientRect();
+            const closestDistance = Math.abs(closestRect.top - focusLine);
+
+            return distance < closestDistance ? index : closestIndex;
+          }, 0);
+        }
+
+        setActiveStoryImage(nextIndex);
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting || !isElementFullyInViewport(stage)) {
+            return;
+          }
+
+          const nextIndex = Number(entry.target.dataset.storyImage);
+          if (!Number.isNaN(nextIndex)) {
+            setActiveStoryImage(nextIndex);
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '-28% 0px -42% 0px',
+        threshold: 0
+      });
+
+      steps.forEach((step) => observer.observe(step));
+      setActiveStoryImage(0);
+      window.addEventListener('scroll', updateStoryImageByViewport, { passive: true });
+      window.addEventListener('resize', updateStoryImageByViewport);
+      updateStoryImageByViewport();
+    });
+
+    const verticalTabsGroups = Array.from(document.querySelectorAll('[data-vertical-tabs]'));
+
+    verticalTabsGroups.forEach((group) => {
+      const tabs = Array.from(group.querySelectorAll('[data-tab-target]'));
+      const panels = Array.from(group.querySelectorAll('[data-tab-panel]'));
+
+      const setActiveTab = (target) => {
+        tabs.forEach((tab) => {
+          const isActive = tab.dataset.tabTarget === target;
+          tab.classList.toggle('is-active', isActive);
+          tab.setAttribute('aria-selected', String(isActive));
+          tab.tabIndex = isActive ? 0 : -1;
+        });
+
+        panels.forEach((panel) => {
+          const isActive = panel.dataset.tabPanel === target;
+          panel.classList.toggle('is-active', isActive);
+          panel.hidden = !isActive;
+        });
+      };
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('mouseenter', () => {
+          setActiveTab(tab.dataset.tabTarget);
+        });
+
+        tab.addEventListener('focus', () => {
+          setActiveTab(tab.dataset.tabTarget);
+        });
+
+        tab.addEventListener('keydown', (event) => {
+          if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') {
+            return;
+          }
+
+          event.preventDefault();
+          const direction = event.key === 'ArrowDown' ? 1 : -1;
+          const nextIndex = (index + direction + tabs.length) % tabs.length;
+          tabs[nextIndex].focus();
+          setActiveTab(tabs[nextIndex].dataset.tabTarget);
+        });
+      });
+
+      const initialTab = tabs.find((tab) => tab.classList.contains('is-active')) || tabs[0];
+      if (initialTab) {
+        setActiveTab(initialTab.dataset.tabTarget);
+      }
+    });
+  </script>
 </body>
 </html>
