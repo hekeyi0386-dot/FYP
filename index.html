@@ -46,12 +46,6 @@
   <main>
     <section class="opening-copy container soft-border" id="opening-copy">
     <p>
-      Ms. Shen, a lady who held a farewell ceremony for Jing Xiangxiang, her cat, after her body was cremated.
-      “Thank you for being my family and teaching me about love and loss,” she said. “I bring the ashes home.
-      Sometimes I touch the lid of the urn, as if she is still here. I hope that one day I can be reunited with it.”
-    </p>
-
-    <p>
       At Live (Li Wu), a pet end-of-life service shop in Haizhu District, Guangzhou, soft music plays in the room.
       A Samoyed lies on a ceremony table quietly covered with a white cloth. The staff gently brush its fur,
       trim stray hair around its ears and paw pads, and then cover it with a burial blanket, which carries blessings
@@ -69,39 +63,64 @@
     </p>
     </section>
 
-    <section class="pet-data-section container">
+    <section class="pet-data-section container" data-pet-data-section>
   <h2 class="pet-data-title">More pets, more spending, deeper attachment</h2>
 
   <div class="pet-data-grid">
-    <article class="pet-stat-card">
-      <div class="pet-stat-number">124 million</div>
+    <article class="pet-stat-card" data-pet-stat-card data-insight="In 2024, urban households had about 124 million pet cats and dogs.">
+      <div
+        class="pet-stat-number"
+        data-pet-stat-number
+        data-target="124"
+        data-decimals="0"
+        data-suffix=" million"
+      >124 million</div>
       <div class="pet-stat-label">
-        urban pet cats and dogs in China in 2024
+        Urban pet cats and dogs in China in 2024
       </div>
     </article>
 
-    <article class="pet-stat-card">
-      <div class="pet-stat-number">300.2 bn yuan</div>
+    <article class="pet-stat-card" data-pet-stat-card data-insight="Urban cat and dog spending reached 300.2 billion yuan in 2024.">
+      <div
+        class="pet-stat-number"
+        data-pet-stat-number
+        data-target="300.2"
+        data-decimals="1"
+        data-suffix=" bn yuan"
+      >300.2 bn yuan</div>
       <div class="pet-stat-label">
-        urban cat and dog consumption in 2024
+        Urban pet cats and dogs consumption in 2024
       </div>
     </article>
 
-    <article class="pet-stat-card">
-      <div class="pet-stat-number">811.4 bn yuan</div>
+    <article class="pet-stat-card" data-pet-stat-card data-insight="China's total pet economy reached 811.4 billion yuan in 2025.">
+      <div
+        class="pet-stat-number"
+        data-pet-stat-number
+        data-target="811.4"
+        data-decimals="1"
+        data-suffix=" bn yuan"
+      >811.4 bn yuan</div>
       <div class="pet-stat-label">
         China’s pet economy in 2025
       </div>
     </article>
 
-    <article class="pet-stat-card">
-      <div class="pet-stat-number">1.15 tn yuan</div>
+    <article class="pet-stat-card" data-pet-stat-card data-insight="By 2028, the market is projected to exceed 1.15 trillion yuan.">
+      <div
+        class="pet-stat-number"
+        data-pet-stat-number
+        data-target="1.15"
+        data-decimals="2"
+        data-suffix=" tn yuan"
+      >1.15 tn yuan</div>
       <div class="pet-stat-label">
-        projected market size by 2028
+        Projected market size by 2028
       </div>
     </article>
   </div>
 
+  <p class="pet-data-interaction-note">Click a card to explore the data.</p>
   <p class="pet-data-source">
     Sources: 2025 China Pet Industry White Paper, iiMedia Research, Goldman Sachs.
   </p>
@@ -109,12 +128,11 @@
 
     <section class="container section-gap demographic-callout">
       <div class="demographic-year" aria-hidden="true">2024</div>
-      <h2 class="demographic-headline">
-        <span class="demographic-sub">For the first time,</span>
-        <span class="demographic-lead">pets outnumbered<br />young children.</span>
-      </h2>
+      <h3 class="demographic-headline">
+        <span class="demographic-sub">For the first time, <br> pets outnumbered young children.</span>
+      </h3>
       <p class="demographic-dek">
-        In 2024, the number of pets in China surpassed the number of children under age four.
+        In 2024, the number of pets in China <br>surpassed the number of children under age four.
       </p>
     </section>
 
@@ -137,7 +155,7 @@
         <div>
           <div class="mini-stats-grid">
             <article class="stat-box small">
-              <div class="stat-number">1.311 bn yuan</div>
+              <div class="stat-number">1.311 bn  <br> yuan</div>
               <div class="stat-label">
                 estimated market size of China’s pet funeral industry in the first half of 2024
               </div>
@@ -166,10 +184,10 @@
           Department of Companion Animal Science </span>
           </p>
           <p>
-          "As social consumption has shifted
+          <em>"As social consumption has shifted
           from meeting basic living needs to seeking a better quality of life, the role of pet dogs has
           also evolved from serving human needs, to ornamentation and entertainment, and now to
-          emotional companions and family members."
+          emotional companions and family members."</em>
           </p>
         </div>
       </aside>
@@ -192,7 +210,16 @@
           </figure>
 
           <div class="scroll-gallery-overlay">
-            <p class="scroll-gallery-progress">Scroll to explore: <span data-scroll-gallery-current>1</span>/4</p>
+            <p class="scroll-gallery-progress">Click to explore: <span data-scroll-gallery-current>1</span>/4</p>
+
+            <div class="scroll-gallery-arrows" aria-label="Gallery navigation">
+              <button class="scroll-gallery-arrow is-prev" type="button" data-scroll-gallery-prev aria-label="Show previous image and text">
+                &larr;
+              </button>
+              <button class="scroll-gallery-arrow is-next" type="button" data-scroll-gallery-next aria-label="Show next image and text">
+                &rarr;
+              </button>
+            </div>
 
             <h2>What Remains After Goodbye</h2>
 
@@ -254,8 +281,11 @@
         </div>
         <p class="interactive-intro">
         Ami said the variation comes from different chemical elements in the ashes, giving each piece a distinct personal meaning.
-        <br>Hover over a crystal to explore<br/>
+
       </p>
+        <p class="crystal-hover-hint" aria-label="Interaction hint">
+          <span>Hover over the crystals to explore</span>
+        </p>
         <div class="crystal-grid crystal-grid-custom">
           <div class="crystal-card">
             <div class="crystal crystal-a"></div>
@@ -509,21 +539,16 @@
           needs, the pet end-of-life service industry is expanding rapidly.
         </p>
       </aside>
-    </section>
-
-    <section class="container section-gap industry-quote-section">
-      <article class="story-card industry-quote-card">
+        <article class="story-card industry-quote-card">
         <p class="quote-inline">
-          “The key challenge for this developing industry lies in striking a balance among commercial growth, service standards,
-          and governance, so as to build a resilient system in which needs can be responded to, risks can be controlled, and
-          conflicts can be mediated.”
+          "The key challenge for this developing industry lies in striking a balance among commercial growth, service standards, and governance, so as to build a resilient system in which needs can be responded to, risks can be controlled, and conflicts can be mediated,"
         </p>
-        <p class="source-note source-note-left">
-          — Yixia Cao, School of Social Development and Public Policy, Fudan University
+        <p class="source-note">
+          ——— Yixia Cao, a professor at the School of Social Development and Public Policy at Fudan University
         </p>
       </article>
     </section>
-
+    
   </main>
   <script>
     const heroImages = [
@@ -658,6 +683,8 @@
       const caption = section.querySelector('[data-scroll-gallery-caption]');
       const steps = Array.from(section.querySelectorAll('[data-scroll-gallery-step]'));
       const currentLabel = section.querySelector('[data-scroll-gallery-current]');
+      const prevButton = section.querySelector('[data-scroll-gallery-prev]');
+      const nextButton = section.querySelector('[data-scroll-gallery-next]');
 
       slides.forEach((slide) => {
         const image = slide.querySelector('img');
@@ -676,6 +703,8 @@
         caption,
         steps,
         currentLabel,
+        prevButton,
+        nextButton,
         activeIndex: 0
       };
     });
@@ -712,35 +741,56 @@
     };
 
     scrollGalleries.forEach((gallery) => {
-      const observer = new IntersectionObserver((entries) => {
-        const visibleEntries = entries.filter((entry) => entry.isIntersecting);
+      const goToNext = () => {
+        const nextIndex = (gallery.activeIndex + 1) % gallery.slides.length;
+        setScrollGalleryIndex(gallery, nextIndex);
+      };
 
-        if (!visibleEntries.length) {
-          return;
-        }
+      const goToPrev = () => {
+        const prevIndex = (gallery.activeIndex - 1 + gallery.slides.length) % gallery.slides.length;
+        setScrollGalleryIndex(gallery, prevIndex);
+      };
 
-        const viewportCenter = window.innerHeight / 2;
-        const bestEntry = visibleEntries.reduce((closestEntry, entry) => {
-          const entryCenter = entry.boundingClientRect.top + (entry.boundingClientRect.height / 2);
-          const closestCenter = closestEntry.boundingClientRect.top + (closestEntry.boundingClientRect.height / 2);
-
-          return Math.abs(entryCenter - viewportCenter) < Math.abs(closestCenter - viewportCenter)
-            ? entry
-            : closestEntry;
+      if (gallery.prevButton) {
+        gallery.prevButton.addEventListener('click', (event) => {
+          event.stopPropagation();
+          goToPrev();
         });
+      }
 
-        const nextIndex = Number(bestEntry.target.dataset.scrollGalleryIndex);
+      if (gallery.nextButton) {
+        gallery.nextButton.addEventListener('click', (event) => {
+          event.stopPropagation();
+          goToNext();
+        });
+      }
 
-        if (!Number.isNaN(nextIndex)) {
-          setScrollGalleryIndex(gallery, nextIndex);
-        }
-      }, {
-        root: null,
-        rootMargin: '-42% 0px -42% 0px',
-        threshold: [0, 0.5, 1]
+      gallery.dots.forEach((dot, index) => {
+        dot.style.cursor = 'pointer';
+        dot.addEventListener('click', (event) => {
+          event.stopPropagation();
+          setScrollGalleryIndex(gallery, index);
+        });
       });
 
-      gallery.steps.forEach((step) => observer.observe(step));
+      gallery.slides.forEach((slide, index) => {
+        slide.style.cursor = 'pointer';
+        slide.addEventListener('click', (event) => {
+          event.stopPropagation();
+          setScrollGalleryIndex(gallery, index);
+        });
+      });
+
+      gallery.steps.forEach((step, fallbackIndex) => {
+        const stepIndex = Number(step.dataset.scrollGalleryIndex);
+        const targetIndex = Number.isNaN(stepIndex) ? fallbackIndex : stepIndex;
+
+        step.style.cursor = 'pointer';
+        step.addEventListener('click', (event) => {
+          event.stopPropagation();
+          setScrollGalleryIndex(gallery, targetIndex);
+        });
+      });
     });
 
     const storyScrollSections = Array.from(document.querySelectorAll('[data-story-scroll-section]'));
@@ -857,6 +907,122 @@
         setActiveTab(initialTab.dataset.tabTarget);
       }
     });
+
+    const petDataSection = document.querySelector('[data-pet-data-section]');
+
+    if (petDataSection) {
+      const petStatCards = Array.from(petDataSection.querySelectorAll('[data-pet-stat-card]'));
+      const petInsight = petDataSection.querySelector('[data-pet-data-insight]');
+      const linkedDemographicCallout = document.querySelector('.demographic-callout');
+      let linkPulseTimeout = null;
+
+      const formatCounterValue = (value, decimals) => {
+        const roundedValue = Number(value.toFixed(decimals));
+        return roundedValue.toLocaleString('en-US', {
+          minimumFractionDigits: decimals,
+          maximumFractionDigits: decimals
+        });
+      };
+
+      const animateCounter = (node) => {
+        const target = Number(node.dataset.target || 0);
+        const decimals = Number(node.dataset.decimals || 0);
+        const suffix = node.dataset.suffix || '';
+        const duration = 1300;
+        const start = performance.now();
+
+        const run = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = target * eased;
+
+          node.textContent = `${formatCounterValue(current, decimals)}${suffix}`;
+
+          if (progress < 1) {
+            window.requestAnimationFrame(run);
+          }
+        };
+
+        window.requestAnimationFrame(run);
+      };
+
+      const pulseDemographicCallout = () => {
+        if (!linkedDemographicCallout) {
+          return;
+        }
+
+        linkedDemographicCallout.classList.remove('is-linked');
+        void linkedDemographicCallout.offsetWidth;
+        linkedDemographicCallout.classList.add('is-linked');
+
+        if (linkPulseTimeout) {
+          window.clearTimeout(linkPulseTimeout);
+        }
+
+        linkPulseTimeout = window.setTimeout(() => {
+          linkedDemographicCallout.classList.remove('is-linked');
+        }, 840);
+      };
+
+      const setActivePetCard = (targetCard) => {
+        petStatCards.forEach((card) => {
+          card.classList.toggle('is-active', card === targetCard);
+        });
+
+        if (targetCard) {
+          targetCard.classList.add('is-revealed');
+        }
+
+        const numberNode = targetCard?.querySelector('[data-pet-stat-number]');
+
+        if (numberNode) {
+          if (!numberNode.dataset.hasAnimated) {
+            animateCounter(numberNode);
+            numberNode.dataset.hasAnimated = 'true';
+          }
+        }
+
+        if (petInsight && targetCard?.dataset.insight) {
+          petInsight.textContent = targetCard.dataset.insight;
+        }
+
+        pulseDemographicCallout();
+      };
+
+      petStatCards.forEach((card, index) => {
+        card.style.setProperty('--card-index', String(index));
+        card.tabIndex = 0;
+
+        card.addEventListener('click', () => {
+          setActivePetCard(card);
+        });
+
+        card.addEventListener('keydown', (event) => {
+          if (event.key !== 'Enter' && event.key !== ' ') {
+            return;
+          }
+
+          event.preventDefault();
+          setActivePetCard(card);
+        });
+      });
+
+      const petDataObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          petDataSection.classList.add('is-visible');
+
+          observer.unobserve(entry.target);
+        });
+      }, {
+        threshold: 0.34
+      });
+
+      petDataObserver.observe(petDataSection);
+    }
   </script>
 </body>
 </html>
